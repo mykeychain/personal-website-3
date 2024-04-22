@@ -1,0 +1,7 @@
+.general-title {
+    margin: 8rem 3rem 2rem 3rem;
+    color: var(--main-title-color);
+    font-family: "Buda";
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+}

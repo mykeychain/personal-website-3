@@ -1,0 +1,26 @@
+.listing-card {
+    display: flex;
+    background-color: #364d57;
+    margin-bottom: 1rem;
+    filter: drop-shadow(#2a3b43 0 0 5px);
+    padding: 0.5rem;
+}
+
+.listing-card:hover {
+    background-color: #39515b;
+    cursor: pointer;
+    filter: drop-shadow(#2a3b43 0 0 15px);
+}
+
+.listing-logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.listing-text {
+    margin-left: 1rem;
+}
+
+.listing-title {
+    font-size: 2rem;
+}

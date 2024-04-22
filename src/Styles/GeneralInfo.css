@@ -1,0 +1,32 @@
+.general-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0 2rem 10rem;
+}
+
+.headshot {
+    height: 50vh;
+}
+
+.headshot-container {
+    position: relative;
+}
+
+.decoration {
+    content: "";
+    position: absolute;
+    width: 10vw;
+    height: 0.75rem;
+    background-color: var(--main-accent-color);
+}
+
+.decoration.top {
+    top: -0.5rem;
+    right: -1rem;
+}
+
+.decoration.bottom {
+    bottom: 0;
+    left: -1rem;
+}
