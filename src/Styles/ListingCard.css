@@ -1,7 +1,18 @@
+.listing-card-container {
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.listing-placeholder.open {
+    height: 100%;
+    border: 5px dashed #364d57;
+}
+
 .listing-card {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #364d57;
-    margin-bottom: 1rem;
     filter: drop-shadow(#2a3b43 0 0 5px);
     padding: 0.5rem;
 }
@@ -12,15 +23,53 @@
     filter: drop-shadow(#2a3b43 0 0 15px);
 }
 
-.listing-logo {
-    width: 5rem;
-    height: 5rem;
+.listing-card.open {
+    position: fixed;
+    top: 7rem;
+    left: 4rem;
+    width: calc(100% - 9rem);
+    z-index: 99;
+
+    .listing-logo {
+        padding: 3rem 0 0 3rem;
+    }
+
+    .listing-text {
+        padding-top: 3rem;
+    }
 }
 
-.listing-text {
-    margin-left: 1rem;
+.listing-card.open:hover {
+    cursor: default;
+    background-color: #364d57;
+    filter: drop-shadow(#2a3b43 0 0 5px);
+}
+
+.listing-logo {
+    width: 4rem;
+    height: 4rem;
+    /* padding: 3rem 0 0 3rem; */
 }
 
 .listing-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+}
+
+.listing-text {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: calc(100% - 10rem);
+}
+
+.card-additional-details {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.card-additional-details.open {
+    height: auto;
+    width: auto;
+    visibility: visible;
+    margin: 3rem;
 }

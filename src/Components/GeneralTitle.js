@@ -4,7 +4,7 @@ import "../Styles/GeneralTitle.css";
 function GeneralTitle() {
     return (
         <div className="general-title">
-            MIKE CHANG
+            MICHAEL CHANG
         </div>
     );
 };

@@ -2,3 +2,25 @@
     min-width: 35%;
     text-align: start;
 }
+
+.listing-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.listing-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.listing-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+}

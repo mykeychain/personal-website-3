@@ -7,6 +7,7 @@
 
 .headshot {
     height: 50vh;
+    filter: drop-shadow(var(--secondary-bg-color) 1rem 1rem);
 }
 
 .headshot-container {
@@ -29,4 +30,16 @@
 .decoration.bottom {
     bottom: 0;
     left: -1rem;
+}
+
+.decoration-stamp {
+    position: absolute;
+    bottom: -4rem;
+    left: -3rem;
+    /* fill: var(--main-accent-color); */
+    fill: var(--main-title-color);
+    padding: 1rem;
+    /* border: 0.4rem solid var(--main-accent-color); */
+    border: 0.4rem solid var(--main-title-color);
+    border-radius: 1rem;
 }

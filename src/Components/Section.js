@@ -8,7 +8,8 @@ function Section(props) {
         const cards = [];
         let i = 1;
         while (i <= props.numCards) {
-            cards.push(<ListingCard />);
+            let id = props.id + "-" + i;
+            cards.push(<ListingCard id={id} key={id} />);
             i++;
         };
         return cards;
